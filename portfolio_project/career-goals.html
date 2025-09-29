@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Career Goals – Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Career Goals</h1>
+    <nav>
+      <a href="resume.html">Résumé</a>
+      <a href="cover-letter.html">Cover Letter</a>
+      <a href="career-goals.html">Career Goals</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Vision</h2>
+      <p>My short-term goal is to master fundamentals; long-term, to become a full-stack engineer focusing on reliability and accessibility.</p>
+    </section>
+
+    <section class="card">
+      <h2>Media</h2>
+      <p><strong>Image:</strong></p>
+      <img src="assets/profile.jpg" alt="Profile or project image" style="max-width:100%; height:auto; border-radius:10px; border:1px solid #e2e8f0;">
+
+      <p style="margin-top: 1rem;"><strong>Audio:</strong></p>
+      <audio controls>
+        <source src="assets/intro.mp3" type="audio/mpeg">
+        <source src="assets/intro.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+
+      <p style="margin-top: 1rem;"><strong>Video:</strong></p>
+      <video controls width="100%" style="max-width:720px; border:1px solid #e2e8f0; border-radius:10px;">
+        <source src="assets/intro.mp4" type="video/mp4">
+        <source src="assets/intro.mov" type="video/quicktime">
+        <source src="assets/intro.mpeg" type="video/mpeg">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="card">
+      <h2>Contact Me</h2>
+      <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+        <label for="fname">First Name:</label>
+        <input id="fname" name="fname" type="text" required>
+
+        <label for="lname">Last Name:</label>
+        <input id="lname" name="lname" type="text" required>
+
+        <label for="company">Company Name:</label>
+        <input id="company" name="company" type="text">
+
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input id="phone" name="phone" type="tel">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <p>Best Contact Time:</p>
+        <label><input type="radio" name="time" value="am"> a.m.</label>
+        <label><input type="radio" name="time" value="pm"> p.m.</label>
+        <label><input type="radio" name="time" value="anytime"> anytime</label>
+
+        <label for="method" style="margin-top:0.75rem;">Preferred Contact Method:</label>
+        <select id="method" name="method">
+          <option>phone</option>
+          <option>email</option>
+          <option>text</option>
+        </select>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Your Name</small>
+  </footer>
+</body>
+</html>
+
+
+References
+Author, A. (2024). Title of page. Site Name. URL

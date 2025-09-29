@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Résumé – Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="resume.html">Résumé</a>
+      <a href="cover-letter.html">Cover Letter</a>
+      <a href="career-goals.html">Career Goals</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="card">
+      <header>
+        <h2>Professional Summary <span class="highlight">Frontend Intern Ready</span></h2>
+      </header>
+
+      <section>
+        <p>
+          Detail-oriented web developer with a passion for clean HTML, accessible CSS, and vanilla JavaScript.
+          Known for <strong>clear communication</strong> and <em>reliable delivery</em>.
+        </p>
+        <p>
+          Location: City, ST<br>
+          Email: <a href="mailto:you@example.com">you@example.com</a>
+        </p>
+        <div id="current-date">Today’s date will appear here…</div>
+        <hr>
+      </section>
+
+      <section>
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML5 semantics & layout</li>
+          <li>CSS (selectors, layout, responsive basics)</li>
+          <li>JavaScript (DOM, console, debugging)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Experience</h3>
+        <p><strong>Project Assistant</strong> – Sample Org (2023–Present)</p>
+        <p>Built basic websites and learned to debug with browser dev tools.</p>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <table>
+          <caption>Coursework Snapshot</caption>
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Institution</th>
+              <th>Year</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development</td>
+              <td>WGU</td>
+              <td>2025</td>
+              <td><em>HTML/CSS/JS</em></td>
+            </tr>
+            <tr>
+              <td>IT Foundations</td>
+              <td>WGU</td>
+              <td>2025</td>
+              <td>CompTIA prep</td>
+            </tr>
+            <tr>
+              <td>Professional Comm</td>
+              <td>WGU</td>
+              <td>2025</td>
+              <td><strong>Writing</strong> & presentations</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>References available upon request.</p>
+      </footer>
+    </article>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="year"></span> Your Name</small>
+  </footer>
+
+  <script>
+    // Populate current date div and footer year; write to console
+    const dateDiv = document.getElementById('current-date');
+    dateDiv.textContent = 'Today: ' + new Date().toDateString();
+    document.getElementById('year').textContent = new Date().getFullYear();
+    console.log('Resume page loaded successfully.');
+  </script>
+</body>
+</html>

@@ -1,45 +1,39 @@
-/* Universal selector to normalize spacing a bit */
+/* Reset / universal */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Element selectors */
-body { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; color: #222; background: #f7f7fb; }
-header, footer { background: #0f172a; color: #fff; padding: 1rem; }
+/* General page structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f7f7fb;
+}
+
+header, footer {
+  background: #0f172a;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
 main { padding: 1rem; }
-section { margin-bottom: 1.25rem; }
-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
-th, td { border: 1px solid #cbd5e1; padding: 0.5rem; text-align: left; }
-caption { font-weight: bold; margin-bottom: 0.5rem; }
+section { margin-bottom: 1.5rem; }
 
-/* Descendant selector */
-nav a { text-decoration: none; margin-right: 0.75rem; }
+/* Resume-specific background */
+body.resume {
+  background-color: #f0f0f0;
+}
 
-/* Pseudo-class selector */
-nav a:hover { text-decoration: underline; }
-
-/* Class selector */
-.highlight { background: #fffbe6; border: 1px solid #facc15; padding: 0.25rem 0.5rem; border-radius: 6px; }
-
-/* ID selector */
-#current-date { font-style: italic; color: #475569; }
-
-/* Lists */
-ul { list-style-type: square; margin-left: 1.25rem; }
-ol { margin-left: 1.25rem; }
-li { margin: 0.25rem 0; }
-
-/* Utility-ish */
-.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1rem; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
-hr { border: none; height: 1px; background: #e2e8f0; margin: 1rem 0; }
-footer { margin-top: 1rem; text-align: center; font-size: 0.9rem; }
-
-/* Forms */
-label { display: block; margin: 0.5rem 0 0.25rem; }
-input[type="text"], input[type="email"], input[type="tel"], textarea, select {
-  width: 100%; padding: 0.5rem; border: 1px solid #cbd5e1; border-radius: 6px;
+/* Card container for main content */
+.card {
+  max-width: 800px;
+  margin: 2rem auto;
   background: #fff;
-}
-textarea { min-height: 120px; }
-input[type="submit"] {
-  margin-top: 0.75rem; padding: 0.6rem 1rem; border: 1px solid #0f172a; background: #0f172a; color: #fff; border-radius: 8px; cursor: pointer;
-}
-input[type="submit"]:hover { opacity: 0.9; }
